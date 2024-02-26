@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<title> formulario </title>
+<style>
+body {
+    background-image: url(https://4.bp.blogspot.com/-tjHFzhmuUV4/XO98d_Rj8cI/AAAAAAAAGls/vHoJYkj9Bx4EN7p8tOz1sIvBx1FhD-KwwCKgBGAs/w1920-h1080-c/dark-star-shaco-splash-art-lol-4K-89.jpg);
+        color: white;
+        font-size: 20px;
+}
+
+
+fieldset{
+    background-color: rgb(92, 39, 39);
+}
+
+</style>
+<body>
+    <form>
+    <fieldset>
+        <legend> Datos </legend>
+        <label for="Nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre"/>              
+        <form action="/action_page.php">
+            <label for="email">Correo electrónico</label>
+            <input type="email" name="correo" placeholder="email" id="email">
+            <input type="submit" value="Guardar">
+            <input type="reset" value="Limpiar">
+        <label for="telf">Teléfono</label>
+        <input type="number" maxlength="9"> 
+    </fieldset>
+    <fieldset>
+        <legend>Sobre tí</legend>
+        <p>Cuentanos desde dondes contactas y te llamaré</p>
+    <textarea name="comentario" placeholder="Describete" id="comentario"></textarea>
+    <p><input type="button" onclick="mostrarDatos()" value="Enviar"></p>
+
+
+
+</fieldset>
+</form></body>
+
+
+<script>
+function mostrarDatos() {
+var nombre = document.getElementById("nombre").value;
+var correo = document.getElementById("email").value;
+var telefono = document.getElementById("telefono").value;
+var comentario = document.getElementById("comentario").value;
+
+
+var
+resumen = "Nombre:" + nombre + "\n";
+resumen += "Email:" + email + "\n";
+resumen += "Teléfono:" + email + "\n";
+resumen += "Email:" + email + "\n";
+resumen += "Comentario" + comentario;
+
+alert(resumen);
+}
+
+
+
+</script>
